@@ -1,0 +1,132 @@
+    :root {
+        box-sizing: border-box;
+        --small: 26;
+        --mid: 33;
+        --large: 45;
+    }
+
+    body {
+        margin: 0;
+        color: rgb(33, 25, 34);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 4.5rem;
+        padding: 0rem;
+    }
+
+    select {
+        border: 0;
+        width: 1rem;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    .icons {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .right .icons {
+        width: 2rem;
+        height: 2rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    .right #profile {
+        border-radius: 50%;
+    }
+
+    .left {
+        padding: 0rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+    }
+
+    .center {
+        padding: 0 .5rem;
+        width: 60%;
+    }
+
+    .center input {
+        width: 100%;
+        height: 3rem;
+        border-radius: 4rem;
+        background-color: #e9e9e9;
+        border: 0;
+        padding: 0rem 1rem;
+    }
+
+    ::placeholder {
+        font-size: medium;
+    }
+
+    .pin {
+        position: relative;
+        margin: 15px 8px;
+        border-radius: 1rem;
+    }
+
+    .imagepin {
+
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 1rem;
+        cursor: pointer;
+
+    }
+
+    .pin-small {
+        grid-row-end: span var(--small);
+    }
+
+
+    .pin-mid {
+        grid-row-end: span var(--mid);
+    }
+
+
+    .pin-large {
+        grid-row-end: span var(--large);
+    }
+
+    .btn_nav {
+        width: 25%;
+        height: 48px;
+        border-radius: 1.7rem;
+        border: 0;
+        background-color: white;
+        font-weight: bold;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+    #inicio {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+
+    #cont_pin {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 14.75rem);
+        grid-auto-rows: 0.5rem;
+        justify-content: center;
+    }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style/style.css" rel="stylesheet">
+    <title>P Statics</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid d-inline-flex">
+        </div>
+    </header>
+    <section id="buscador">
+        <div class=" container justify-content-center">
+            <div id="opciones" class="buscador container-lg row align-items-start text-center justify-content-center">
+
+                <div class="liga container-fluid mt-4">
+                    <label class="form-label">Buscar un jugador</label>
+                    <input id="buscar" type="text" class="buscar form-control" list="sugerencias" placeholder="ingrese primera letra del nombre y apellido, Ejemplo: L. Messi">
+                    <button type="button" class="btn btn-primary" id="btnBuscar">Buscar</button>
+                </div>
+
+                <div id="jugadores" class="jugadores row-cols-auto">
+                </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>
